@@ -1,0 +1,24 @@
+#PARENT CLASS
+class Person:
+  def __init__(self,firstName,lastName, age):
+    self.firstName = firstName
+    self.lastName = lastName
+    self.age = age
+
+
+  def introduce(self):
+    print("Hi I'am " + self.firstName + " " + self.lastName)
+
+
+#CHILD CLASS
+class Student(Person):
+  def __init__(self, firstName,lastName,sectionYear,sr_code, age):
+    super().__init__(firstName,lastName, age)
+    self.sectionYear = sectionYear
+    self.sr_code = sr_code
+    self.age = age
+
+
+
+pOne = Person("Kim", "Candor", 20)
+sOne = Student("Emanuel","Briones","IT-2101",2101059, 20)
